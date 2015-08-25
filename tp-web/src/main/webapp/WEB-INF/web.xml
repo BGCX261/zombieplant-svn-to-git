@@ -1,0 +1,88 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  
+
+<display-name>Archetype Created Web Application</display-name>
+	<!-- 
+	
+	<servlet>
+		<servlet-name>comprarServlet</servlet-name>
+		<servlet-class>servlets.ComprarServlet</servlet-class>
+	</servlet>
+	-->
+	
+	
+    <servlet>
+		<servlet-name>mejorasServlet</servlet-name>
+		<servlet-class>servlets.MejorasServlet</servlet-class>
+	</servlet>
+	
+	
+	
+	<servlet>
+		<servlet-name>jardinZenServlet</servlet-name>
+		<servlet-class>servlets.JardinZenServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>changeZonaServlet</servlet-name>
+		<servlet-class>servlets.ChangeZonaServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>buscarPlantinServlet</servlet-name>
+		<servlet-class>servlets.BuscarPlantinServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>comprarServlet</servlet-name>
+		<servlet-class>servlets.ComprarServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ordenarServlet</servlet-name>
+		<servlet-class>servlets.OrdenarServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>ordenarServlet</servlet-name>
+		<url-pattern>/ordenar</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>comprarServlet</servlet-name>
+		<url-pattern>/comprar</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>mejorasServlet</servlet-name>
+		<url-pattern>/mejoras</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>jardinZenServlet</servlet-name>
+		<url-pattern>/jardinzen</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>changeZonaServlet</servlet-name>
+		<url-pattern>/changezona</url-pattern>
+	</servlet-mapping>
+	
+		<servlet-mapping>
+		<servlet-name>buscarPlantinServlet</servlet-name>
+		<url-pattern>/buscarPlantin</url-pattern>
+	</servlet-mapping>
+
+        <taglib>
+		  <taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+		  <taglib-location>c.tld</taglib-location>
+	    </taglib>
+</web-app>

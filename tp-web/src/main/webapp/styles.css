@@ -1,0 +1,52 @@
+
+table {
+	border-collapse:collapse;
+}
+
+table, th, td {
+	border: 2px solid black;
+}
+
+td, th {
+	padding:5px;
+}
+
+th {
+	background-color:#D0FDF7;
+}
+
+h5 {
+	color:red;
+}
+
+
+
+#derecha {
+      position:absolute;
+		top: 60px;
+		left: 490px;
+      
+}
+
+.titulo {
+     color:blue;
+}
+
+.mouseOver{
+	background-color:#F68E06
+	}
+	
+
+.mouseOut{
+	background-color:#FFFFFF
+	}
+
+.encabezado{
+	background-color:#D0FDF7
+}
+
+#itemLista {
+     color:#1A85BE;
+}
+
+

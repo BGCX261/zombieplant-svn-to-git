@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+	    <link rel="stylesheet" href="style.css" type="text/css" /> 
+		<meta charset="utf-8" />
+		<h2>Zombies vs Plantas - Jardin Zen</h2>
+		<hr>
+	</head>
+	<body>	
+
+        Jardin <span wicket:id="zonaVisibleNombre"></span>        
+        <h3>B&uacute;scar Plantines</h3>
+        
+        <form wicket:id="buscarForm">
+            <table width="22.5%" >
+                <tr >
+                    <td align="right">Nombre:</td>
+                    <td align="left"> <input wicket:id="criterioBusqueda" type="text" name="nombreBusqueda"/>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" align="right">
+                    	<input type="submit" wicket:id="buscar" name="buscar" value="Buscar"/>
+                    </td>
+                </tr>
+            </table>
+		</form>
+        <br>
+			<form wicket:id="jardinZenForm">
+		<table border="1" class="general">
+				<tr>		
+					<th><a wicket:id="nombreLabel">Nombre</a></th>
+					<th><a wicket:id="ataqueLabel">Ataque</a></th>
+				 	<th><a wicket:id="defensaLabel">Defensa</a></th>
+					<th>Mejorar</th>
+				</tr>
+				<tr wicket:id="plantinesFiltrados">
+					<td wicket:id="nombre"></td>
+					<td wicket:id="ataque"></td>
+					<td wicket:id="defensa"></td>  	
+					<td> <a wicket:id="mejorar"> mejorar</a></td>
+				</tr>
+		</table> 
+
+		<div id="botones">
+				<input wicket:id="cambiarZona" type="submit" value="Cambiar de zona"> 
+				<input wicket:id="paginaAnterior" type="submit" value="Volver"> 
+				</div>
+				
+			</form>
+	</body>
+</html>

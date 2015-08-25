@@ -1,0 +1,33 @@
+
+body{
+    background-color: #A3A3A3;
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size 100%;
+}
+
+#contenido{
+    background-color: #D6F2EF;
+}
+
+.mensaje{
+    background-color: #F70A0A;
+}
+
+.titulo{
+    color: blue;
+}
+
+
+table, th, td {
+        border: 2px solid black;
+}
+
+td, th {
+        padding:5px;
+}
+
+th {
+        background-color:#D0FDF7;
+}
+

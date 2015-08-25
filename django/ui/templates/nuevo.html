@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+
+{% block contenido %}
+
+<label class="mensaje">{{mensaje}}</label> 
+<br>
+<span class="titulo">Agregar producto</span>
+<br>
+<form action='addNuevo' method='GET'>
+   * Id<input type="text" name="id" value="" /><br>
+   * Nombre<input type="text" name="nombre" value="" /><br>
+   * Precio<input type="text" name="precio" value="" /><br>
+   * Marca<input type="text" name="marca" value="" /><br>
+   * Campos obligatorios<br>
+   <input type="submit" value="Agregar" /><br>
+   <a href="buscar">Volver</a>
+</form>
+
+
+{% endblock %}
+
+

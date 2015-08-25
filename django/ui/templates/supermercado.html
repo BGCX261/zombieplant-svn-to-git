@@ -1,0 +1,64 @@
+{% extends "template.html" %}
+
+{% block contenido %}
+
+{% with model=request.session.supermercadoModel %}
+<a href="nuevo">Agregar nuevo producto</a>
+<h5>Filtrar productos</h5>
+<form action='buscar' method='GET'>
+   <input type="text" name="criterio" value="{{model.criterioDeBusqueda}}" >
+   <input type="submit" value="buscar" />
+</form>
+<label class="mensaje">{{mensaje}}</label>
+<br>
+<span class="titulo">Productos disponibles</span>
+<TABLE border="2">
+	<tr>
+		<td>Nombre</td>
+		<td>Marca</td>
+		<td>Precio</td>
+		<td>Comprar</td>
+	</tr>
+	{% for producto in model.busqueda %}
+	<tr>
+		<td>
+			<a href="datos?idProducto={{producto.id}}">{{ producto.nombre}}</a>
+		</td>
+		<td>
+			{{ producto.marca}}
+		</td>
+		<td>
+			{{ producto.precio}}
+		</td>
+		<td>
+			<a href="comprar?idProducto={{producto.id}}">comprar</a>
+		</td>
+	</tr>
+	{% endfor %}
+</TABLE>
+<br> 
+<br>
+<br>
+<span class="titulo">Productos comprados</span>
+<br>
+dinero:{{model.cliente.dinero}}
+<TABLE border="2">
+	<tr>
+		<td>Nombre</td>
+		<td>marca</td>
+	</tr>
+		{% for producto in model.cliente.carrito %}
+	<tr>
+		<td>
+		{{ producto.nombre}}
+		</td>
+		<td>
+		{{ producto.marca}}
+		</td>
+		</tr>
+		{% endfor %}
+</TABLE>
+{% endwith %}
+{% endblock %}
+
+

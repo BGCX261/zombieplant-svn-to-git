@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+	    <link rel="stylesheet" href="style.css" type="text/css" /> 
+		<meta charset="utf-8" />
+	<h2>Zombies vs plantas - Mejoras</h2>
+	<hr>
+	</head>
+	<body>	
+			Plantin a mejorar: <span wicket:id="plantinSeleccionado.nombre"></span>
+			<br /> 
+			Recursos: <span wicket:id="jugador.puntos"></span> 
+	
+	  		<form wicket:id="mejorasForm">
+	  			  		
+	  				<div id="comprada">
+						<table border="1" class="general">
+							<tr>
+								<th>Mejoras Compradas</th>
+							</tr>
+							<tr wicket:id="plantinSeleccionado.mejorasCompradas">
+								<td wicket:id="descripcion"></td>
+							</tr>		
+						</table>
+					</div>
+					<br>
+					<div id= "disponible" >
+						<table border="1" class="general">
+							<tr>
+								<th>Mejoras Disponibles</th>
+								<th>Costo</th>
+								<th>Comprar</th>				
+							</tr>
+							<tr wicket:id="mejorasDisponibles">
+								<td wicket:id="descripcion"></td>
+								<td wicket:id="costo"></td>	
+								<td> <a wicket:id= "comprar"> comprar </a></td>
+											  	
+							</tr>
+						</table> 
+					</div> 
+				
+		
+
+
+		  <div id="botones3">
+				<input wicket:id="paginaAnterior" type="submit" value="Volver"/> 
+				</div> 
+		</form> 
+	</body>
+</html>

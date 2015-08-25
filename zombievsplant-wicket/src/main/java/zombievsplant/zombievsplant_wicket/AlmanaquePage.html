@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+	    <link rel="stylesheet" href="style.css" type="text/css" /> 
+		<meta charset="utf-8" />
+		<h2>Zombies vs Plantas - Almanaque de Zombies</h2>
+		<hr>
+	</head>
+	<body>	
+
+
+        <h3>B&uacute;scar Zombies </h3>
+        <form wicket:id="buscarForm">
+            <table width="20%">
+                <tr>
+                    <td align="right">Nombre:</td>
+                    <td align="left">
+                        <input wicket:id="busqueda" type="text" name="nombreBusqueda"/>
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td colspan="2" align="center">
+                    	<input type="submit" wicket:id="buscar" name="buscar" value="Buscar"/>
+                    </td>
+               </tr>
+            </table>
+		</form>
+<br>
+			<form wicket:id="almanaqueForm">
+			<table border="1" class="general">
+				<tr>		
+					<th>Zombies</th>
+				</tr>
+				<tr  wicket:id="zombies">
+					<td wicket:id="nombre"></td>	
+				</tr>
+		</table> 
+
+		
+<br>
+		<div id="botones">
+				<input wicket:id="jardinZen" type="submit" value="Jardin Zen"> 
+				<input wicket:id="paginaAnterior" type="submit" value="Jugar"> 
+				</div>
+				
+			</form>
+			<br>
+		    <div id="panel" >
+		    <table>
+				<tr><td><h3>Datos:</h3></td></tr>
+			
+				<tr><td>Zombie Seleccionado:<label wicket:id="zombieSeleccionado.nombre"></label></td></tr>
+				<tr><td>descripcion:<label wicket:id="zombieSeleccionado.descripcion"></label></td></tr>
+				<tr><td>ataque:<label wicket:id="zombieSeleccionado.ataque"></label></td></tr>
+				<tr><td>defensa:<label wicket:id="zombieSeleccionado.defensa"></label></td></tr>
+			</table>
+			</div>
+	</body>
+</html>
